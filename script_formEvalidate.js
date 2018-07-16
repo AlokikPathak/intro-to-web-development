@@ -1,3 +1,10 @@
+/**
+ * error_fname, error_lname, error_email, error_mobile, error_address 
+ * are the flags which are set as true when there is error in their respective input.
+ * rowUpdateNo stores the value of row which will be updated.
+ * update is used as flag. It is set as true when user request to update a record.
+ * counter stores the index of row in which the new user details will be added to table.
+*/
 var error_fname = true;
 var error_lname = false;
 var error_email = true;
@@ -8,9 +15,9 @@ var update=false;
 var counter=1;
 
 /**
-* Alternate of $(document).ready(function(){});
-* Executed after all DOM elements are loaded and Document is ready
-*/
+ * Alternate of $(document).ready(function(){});
+ * Executed after all DOM elements are loaded and Document is ready
+ */
 $(function(){
 
 	$("#fname_error_message").hide();
