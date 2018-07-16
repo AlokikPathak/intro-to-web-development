@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Intro to Web development</title>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="scriptFormEvalidate.js"></script>
+
+<link rel="stylesheet" href="styleFormEvalidate.css">
+
+</head>
+
+
+
+<body>
+
+<img src="mindfire.png" alt="mindfire" width="500" height="100"  style="horizonatal-align: middle;">
+<h2 id="Heading" style= "color:Tomato; text-align:center;"> Registration Form</h2>
+
+<div>
+	<form>
+	
+	<label for="fname"><b>First Name<span style="color: red"> * </span></b></label><br>
+	<input type="text" id="fname" name=""  placeholder="Enter your first name..." style="width:50%" >
+	<span class="error_form" id="fname_error_message" style="color:tomato; width=50%"></span><br>
+	
+	<label for="lname"><b>Last Name</b></label><br>
+	<input type="text" id="lname" name="" placeholder="Enter your last name..." style="width:50%" >
+	<span class="error_form" id="lname_error_message" style="color:tomato; width=50%"></span><br>
+	
+	<label for="fname"><b>Gender:</b></label><br>
+	<input type="radio" name="gender" value="male" checked> Male
+	<input type="radio" name="gender" value="female"> Female
+	<input type="radio" name="gender" value="other"> Other<br><br>
+	
+	<label  for="email"><b>Email <span style="color: red"> * </span></b></label><br>
+	<input type="text" id="email" name="" placeholder="Enter your email address..." style="width:50%" >
+	<span class="error_form" id="email_error_message" style="color:tomato; width=50%"></span><br>
+	
+	<label for="mobile"><b>Mobile No.<span style="color: red"> * </span></b></label><br>
+	<input type="text" id="mobile" name="" placeholder="Enter mobile no. ..." style="width:50%">
+	<span class="error_form" id="mobile_error_message" style="color:tomato; width=50%"></span><br>
+	
+	
+	<label for="address"><b>Address</b></label><br>
+	<input type="text" id="address" name="" placeholder="Enter address..." style="width:50%">
+	<span class="error_form" id="address_error_message" style="color:tomato; width=50%"></span><br>
+	
+	<br><label for="department"><b>Department <span style="color: red"> * </span></b></label><br>
+	
+	<select id="department" name="department" style="width:50%" >
+		<option value="Software Engineer">Software Engineer</option>
+		<option value="Software Test Engineer">Software Test Engineer</option>
+		<option value="UX/UI Designer">UX/UI Designer</option>
+	</select>
+	
+	
+	<input type="button" onclick="resetDet()" value="RESET" style="width:50%" ></button> 
+	<input type="button" id="subUpd" onclick="myFunction()" value="SUBMIT / UPDATE"  style="width:50%"></button>
+	
+	<br><br>
+	<label for="empdetails"><b>Employee Details:</b></label><br>
+	
+	<table id="empTab" style= "width:100%; border-spacing:5 px;  ">
+	<tr>
+		<th>Sl.No.</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Email</th>
+		<th>Mobile</th>
+		<th>Address</th>
+		<th>Department</th>
+		<th>Update</th>
+		<th>Delete</th>
+	</tr>
+	
+	</table>
+	
+	
+
+	
+	</form>
+	</div>
+</body>
+
+</html>
